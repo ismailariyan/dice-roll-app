@@ -15,6 +15,8 @@ class _DiceRollerState extends State<DiceRoller> {
   void rolldice() {
    
     setState(() {
+      // here we the 'randomizer' is a ojbect of the Random class which will generate a value
+      //here nextInt is setting the upper limit and this range is 0<= x < 6 so to exclude 0 and include 6 we added 1
        currentDiceRoll = randomizer.nextInt(6)+1;
     });
   }
